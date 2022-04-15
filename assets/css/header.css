@@ -1,0 +1,139 @@
+.header {
+    background-color: var(--colorFondo);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+    justify-content: space-between;
+    margin-left: 5.5rem;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+/* Search, el buscador */
+.navbar__buscador {
+    display: flex;
+    align-items: center;
+    background-color: var(--colorFondoSecundario);
+    border-radius: 1rem;
+    padding-right: 1rem;
+}
+/* El input del buscador */
+.navbar__buscador--input {
+    background-color: var(--colorFondoSecundario);
+    border: none;
+    border-radius: 1rem;
+    font-family: var(--fuenteUno);
+    font-size: 1rem;
+    height: 2.5rem;
+    outline: none;
+    padding-left: 1rem;
+    width: 30vw;
+}
+/* El botón de Login de usuario */
+.login_button {
+    border: 1px solid var(--colorTextoSecundario);
+    border-radius: 5px;
+    background-color: var(--colorFondo);
+    color: var(--colorTextoSecundario);
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    text-align: center;
+    transition: all 400ms ease-in-out;
+    text-decoration: none;
+    margin: 0 auto;
+}
+/* Hover al botón de Login de usuario */
+.login_button:hover {
+    background-color: var(--colorTextoSecundario);
+    box-shadow: 0px 0px 10px var(--colorTextoSecundario);
+    color: var(--colorFondo);
+}
+
+@media(max-width: 991px) {
+    .navbar{
+        width: 85vw;
+    } 
+}
+
+@media (max-width:768px){
+
+    .navbar__logo {
+        width: 90%;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 1rem 0;
+        width: 90%;
+    }
+
+    .navbar__buscador {
+        display: flex;
+        align-items: center;
+        background-color: var(--colorFondo);
+        border: 1px solid var(--colorFondo);
+        border-radius: 1rem;
+        order: 3;
+        padding: 0;
+    }
+
+    .navbar__buscador--icon {
+        font-size: 2rem;
+        color:var(--colorTexto);
+    }
+
+    .bi, .bi-search {
+        background-color: var(--colorFondo);
+        color:var(--colorTexto);
+        cursor: pointer;
+    }
+
+    .bi-search::before {
+        color: var(--colorTexto);
+        font-size: 2rem;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar__buscador--input {
+        display: none;
+    }
+
+    .login_button{
+        margin: 0;
+        padding: 1rem 1.75rem;
+    }
+}
+/*Reveer con tamaño 576px (el que usa Bootstrap)*/
+@media (max-width: 450px) {
+    
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar__logo {
+        width: 75%;
+    }
+
+    .navbar__logo a img {
+        width: 100%;
+    }
+
+    .login_button{
+        padding: 1rem 1rem;
+    }
+    
+    .bi-search::before {
+        font-size: 1.8rem;
+    }
+}

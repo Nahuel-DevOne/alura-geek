@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+    background-color: #FFFFFF;
+    color:#464646;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1rem;
+    scroll-behavior: smooth;
+    --colorTexto: #464646;
+    --colorTextoSecundario: #2A7AE4;
+    --colorFondo: #FFFFFF;
+    --colorFondoSecundario: #f5f5f5;
+    --colorFondoContacto:#EAF2FD;
+    --formInputBorderBottom: rgb(191, 191, 191);
+    --formButtonHover: #265ea6;
+    --fuenteUno: 'Raleway', sans-serif;
+}

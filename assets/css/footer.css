@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--colorFondo);
+    height: 10vh;
+}
+
+.footer__redes{
+    display: flex;
+}
+
+.footer__redes--logo {
+    height: auto;
+    width: 3rem;
+    margin: 1rem;
+}
+
+.footer__derechos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: var(--colorFondo);
+    bottom: 0;
+    font-size: 1.1em;
+    padding: 1rem 1rem;
+    /* position: fixed; */
+    text-align: center;
+}
+
+.footer__derechos--parrafo {
+    color: var(--colorTexto);
+    font-size: 1.1em;
+    font-weight: 550;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    
+    .footer{
+        width: 100%;
+        gap: 0;
+    }
+
+    .footer__derechos--parrafo {
+        font-size: 1em;
+    }
+}
